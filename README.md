@@ -8,8 +8,6 @@ This project is for educational porpuses only. Pull request are welcome, but pri
 
 # Site published at: https://splatt141.github.io/coming-soon/
 
-# Design: alt text
-
 # 🎯 Project features/goals
 
 - Github pages
