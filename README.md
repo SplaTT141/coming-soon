@@ -17,3 +17,4 @@ This project is for educational porpuses only. Pull request are welcome, but pri
 - CSS animations
 - HTML forms
 - background image
+- CSS custom properties (aka variables)
