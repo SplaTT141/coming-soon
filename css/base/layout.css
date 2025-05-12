@@ -24,6 +24,10 @@ header > .row-short {
   gap: 20px;
 }
 
+footer.container {
+  padding: 0;
+}
+
 .column {
   display: flex;
   flex-direction: column;
