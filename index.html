@@ -4,32 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coming soon</title>
+    <link rel="shortcut icon" href="./favicon.ico" />
     <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
-    <link rel="shortcut icon" href="./favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Coming soon" />
     <link rel="manifest" href="./favicon/site.webmanifest" />
-    
+
     <!-- base/layout -->
-    <link rel="stylesheet" href="./css/base/base.css">
-    <link rel="stylesheet" href="./css/base/layout.css">
+    <link rel="stylesheet" href="./css/base/base.css" />
+    <link rel="stylesheet" href="./css/base/layout.css" />
     <!-- vendor -->
-    <link rel="stylesheet" href="./css/vendor/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/vendor/font-awesome.min.css" />
     <!-- components -->
-    <link rel="stylesheet" href="./css/components/clock.css">
-    <link rel="stylesheet" href="./css/components/mouse.css">
-    <link rel="stylesheet" href="./css/components/progress-bar.css">
-    <link rel="stylesheet" href="./css/components/forms.css">
+    <link rel="stylesheet" href="./css/components/clock.css" />
+    <link rel="stylesheet" href="./css/components/mouse.css" />
+    <link rel="stylesheet" href="./css/components/progress-bar.css" />
+    <link rel="stylesheet" href="./css/components/forms.css" />
     <!-- custom page -->
     <link rel="stylesheet" href="./css/pages/coming-soon.css" />
   </head>
+
   <body>
     <header class="container bg-blue hero">
       <div class="row-short">
-        <img class="logo" src="img/logo.png" alt="Logo" />
+        <img class="logo" src="./img/logo.png" alt="Logo" />
         <h1 class="main-title">Coming soon</h1>
-        <p class="main-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates soluta quae nihil excepturi repellat eaque</p>
+        <p class="main-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima unde necessitatibus nulla debitis suscipit quae dignissimos aspernatur, fuga ab perferendis?</p>
         <div class="clock">
           <div class="time">
             <div class="value">328</div>
@@ -48,6 +49,17 @@
             <div class="label">Seconds</div>
           </div>
         </div>
+        <form class="form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" type="email" name="email" value="" maxlength="50" placeholder="Your email" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <button type="submit">Subscribe</button>
+          </div>
+        </form>
         <div class="mouse"></div>
       </div>
     </header>
@@ -56,7 +68,7 @@
       <div class="row">
         <div class="column">
           <h2 class="section-title">About startup</h2>
-          <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta hic aliquam nisi autem esse. <a href="#">Matrox</a> inventore sed ipsa nobis at?</p>
+          <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio molestias tenetur qui repellendus maxime, aliquid possimus id quisquam amet iusto reiciendis, <a href="#">Matrox</a> consequuntur dolor corrupti exercitationem consectetur hic sequi!</p>
           <div class="progress-bar">
             <div class="top">
               <div>UX design</div>
@@ -69,25 +81,46 @@
           <div class="progress-bar">
             <div class="top">
               <div>Web design</div>
-              <div>86%</div>
+              <div>87%</div>
             </div>
             <div class="bottom">
-              <div class="bar" style="width: 86%;"></div>
+              <div class="bar" style="width: 87%"></div>
             </div>
           </div>
           <div class="progress-bar">
             <div class="top">
               <div>Web development</div>
-              <div>50%</div>
+              <div>15%</div>
             </div>
             <div class="bottom">
-              <div class="bar" style="width: 50%;"></div>
+              <div class="bar" style="width: 15%"></div>
             </div>
           </div>
         </div>
         <div class="column">
           <h2 class="section-title">Have any question?</h2>
-          <p class="section-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem libero assumenda <a href="mailto:mano@pastas.lt">mano@pastas.lt</a>, perferendis deserunt ab voluptate? Atque iure dolores voluptatem!</p>
+          <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum beatae vel at corrupti architecto <a href="mailto:mano@pastas.lt">mano@pastas.lt</a> totam neque cupiditate nesciunt suscipit animi consequatur, ducimus quo, molestias quae?</p>
+          <form class="form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">Name</label>
+                <input id="first-name" type="text" name="name" value="" placeholder="Your name" maxlength="25" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" value="" maxlength="50" placeholder="Your email" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" minlength="20" maxlength="1000" placeholder="Your message" required></textarea>
+              </div>
+            </div>
+            <div class="form-row">
+              <button type="submit">Send message</button>
+            </div>
+          </form>
         </div>
       </div>
     </main>
@@ -95,13 +128,13 @@
     <footer class="container bg-blue">
       <div class="row">
         <div class="socials">
-          <a class="fa fa-facebook" href="#"></a>
-          <a class="fa fa-twitter" href="#"></a>
-          <a class="fa fa-dribbble" href="#"></a>
-          <a class="fa fa-tumblr" href="#"></a>
-          <a class="fa fa-linkedin" href="#"></a>
-          <a class="fa fa-instagram" href="#"></a>
-          <a class="fa fa-rss" href="#"></a>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-dribbble"></a>
+          <a href="#" class="fa fa-tumblr"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-rss"></a>
         </div>
       </div>
       <div class="row-short">
@@ -111,7 +144,7 @@
           <p>All rights reserved</p>
           <p>Designed by <a href="#">TrendyTheme</a></p>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptas! Sunt soluta provident <a href="#">200+</a> nemo sequi, omnis, voluptatum dolore repudiandae ad incidunt, <a href=#">Matrox</a> nam eos! Quos dolore harum molestias consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem assumenda incidunt, accusantium facilis ipsam consectetur sed, <a href="#">200+</a> magnam, provident voluptas saepe. Est facilis temporibus enim <a href="#">Matrox</a> quae distinctio.</p>
       </div>
     </footer>
   </body>

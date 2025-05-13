@@ -4,7 +4,7 @@
 
 .hero {
   background-image: url(../../img/hero.png);
-  background-position: bottom center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -19,33 +19,40 @@
 .main-title {
   font-size: 50px;
   text-transform: uppercase;
-  color: black;
+  color: #000;
 }
 
 .main-description {
-  font-size: 25px;
+  font-size: 22px;
   color: #ccc;
 }
 
-.logo-white {
-  height: 60px;
-  margin-bottom: 30px;
+.hero .form-row {
+  justify-content: center;
+}
+.hero label {
+  color: #fff;
+}
+.hero input {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+.hero ::placeholder {
+  color: #fff;
 }
 
 .section-title {
   font-size: 25px;
-  color: black;
+  color: #000;
 }
 
 .section-description {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 25px;
   color: #555;
 }
-
 .section-description > a {
-  font-size: 18px;
-  line-height: 25px;
   color: #eb1e61;
   text-decoration: none;
 }
@@ -54,21 +61,26 @@ footer {
   /* color: rgba(255, 255, 255, 0.8); */
   color: #ffffffcd;
 }
+
+.logo-white {
+  height: 60px;
+  margin-bottom: 30px;
+}
+
 footer a {
   color: #fff;
 }
 
 .socials {
-  width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.5rem;
+  width: 100%;
+  margin-bottom: 30px;
   padding: 1rem;
-  margin-bottom: 2rem;
   border-bottom: 0.1rem solid #fff;
 }
-
 .socials a {
   display: inline-block;
   width: 2.6rem;
@@ -81,7 +93,6 @@ footer a {
   text-align: center;
   transition: all 0.3s;
 }
-
 .socials a:hover {
   background-color: #fff;
   color: #03a9f5;
@@ -89,12 +100,11 @@ footer a {
 
 .text-trio {
   display: flex;
-  gap: 30px;
+  gap: 0 30px;
 }
 
 @media (max-width: 700px) {
   .text-trio {
     flex-direction: column;
-    gap: 0 30px;
   }
 }
