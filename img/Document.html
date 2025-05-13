@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3013/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Document_files/styles.css">
+    <link rel="stylesheet" href="./Document_files/font-awesome.min.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <p>Pilky</p>
+          <p class="drop fa fa-tint"></p>
+        </div>
+        <div class="navigation">
+          <a href="http://localhost:3013/#">Home</a>
+          <a href="http://localhost:3013/#">Shop</a>
+          <a class="arrow fa fa-angle-down" href="http://localhost:3013/#"></a>
+          <a href="http://localhost:3013/#">About</a>
+          <a href="http://localhost:3013/#">Learn</a>
+          <a class="arrow fa fa-angle-down" href="http://localhost:3013/#"></a>
+          <a href="http://localhost:3013/#">Recipes</a>
+        </div>
+        <div class="user-action">
+          <a class="fa fa-search" href="http://localhost:3013/#"></a>
+          <a class="fa fa-shopping-cart" href="http://localhost:3013/#"></a>
+          <a class="fa fa-user-o" href="http://localhost:3013/#"></a>
+        </div>
+      </nav>
+
+      <main>
+        <div class="underline"></div>
+        <div class="reviews-section">
+          <h1>Reviews</h1>
+          <div class="review">
+            <img class="girl" src="./Document_files/girl.png" alt="Pic">
+            <div class="comment">
+              <p class="stars fa fa-star"></p>
+              <p class="stars fa fa-star"></p>
+              <p class="stars fa fa-star"></p>
+              <p class="stars fa fa-star"></p>
+              <p class="stars fa fa-star"></p>
+              <p class="review-text">"Finally found and almond milk that doesn't compromise on taste. The natural sweetness is a game-changer. My family can't get enough!"</p>
+              <div class="reviewer-info">
+                <div class="reviewer-info-line"></div>
+                <div>
+                  <p class="name">Sarah W</p>
+                  <p class="profession">Product Designer</p>
+                </div>
+              </div>
+            </div>
+            <div class="btn">
+              <a class="left fa fa-long-arrow-left"></a>
+              <a class="right fa fa-long-arrow-right"></a>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="about">
+          <div class="about-text">
+            <h1>Experience Pilky</h1>
+            <p>Immerse yourself in the pure joy of Almond Milk. Crafter with care, designed for simplicity, and perfect for your modenr lifestyle. Elevate your taste exprience - indulge in the essence ofr almonds, elevated to perfection</p>
+            <a href="http://localhost:3013/#">follow us</a>
+          </div>
+          <div class="gallery">
+            <div class="first-gallery-section">
+              <img src="./Document_files/grass.png" alt="Error">
+              <img src="./Document_files/packs.png" alt="Error">
+              <img src="./Document_files/nuts.png" alt="Error">
+            </div>
+            <div class="second-gallery-section">
+              <img src="./Document_files/something.png" alt="Error">
+              <img src="./Document_files/milk.png" alt="Error">
+              <img src="./Document_files/leaf.png" alt="Error">
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  <!-- Code injected by dead-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			console.log('Live reload enabled.');
+		})();
+	}
+	// ]]>
+</script>
+
+</body></html>
